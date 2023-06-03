@@ -7,7 +7,7 @@
                   document.write(new Date().getFullYear())
                 </script>,
                 copyright <i class="fa fa-heart"></i> by
-                <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Technotron infosys pvt.ltd</a>
+                <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">copyright by Abhishek mondal</a>
                 for a better web.
               </div>
             </div>
