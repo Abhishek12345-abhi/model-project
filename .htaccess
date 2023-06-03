@@ -1,0 +1,53 @@
+<IfModule mod_rewrite.c>
+ RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+  RewriteRule ^(.*)$ $1.php
+  
+RewriteCond %{REQUEST_FILENAME}\.htm -f	
+  RewriteRule ^(.*)$ $1.htm
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+  RewriteRule ^(.*)$ $1.html
+
+#RewriteCond %{HTTPS} !on
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+# ------------------------------------------
+
+RewriteRule   ^login/?$ login.php [NC,L]
+RewriteRule   ^dashboard/?$ dashboard.php [NC,L]
+RewriteRule   ^contractor-details/?$ view_contactor.php [NC,L]
+RewriteRule   ^device/?$ mine_device.php [NC,L]
+RewriteRule   ^location/?$ location_master.php [NC,L]
+RewriteRule   ^fleet/?$ fleet_master.php [NC,L]
+
+RewriteRule   ^fleet-add/?$ add_new_fleet.php [NC,L]
+
+
+RewriteRule   ^login_submit/?$ login_sub_process.php [NC,L]
+RewriteRule   ^contractor-scroll-search/?$ contractor_scroll_search_db.php [NC,L]
+RewriteRule   ^reg5_contracTor/?$ add_contractor_db.php [NC,L]
+RewriteRule   ^add7_device/?$ add_device_db.php [NC,L]
+RewriteRule   ^device47-scroll-search/?$ device_scroll_search_db.php [NC,L]
+RewriteRule   ^update4_device/?$ update_device_db.php [NC,L]
+RewriteRule   ^edit-submit/?$ edit_submit_db.php [NC,L]
+RewriteRule   ^add9_location/?$ add_location_db.php [NC,L]
+RewriteRule   ^location55-scroll-search/?$ location_scroll_search.php [NC,L]
+RewriteRule   ^update49_location/?$ update_location_db.php [NC,L]
+
+
+RewriteRule   ^fleet-scroll-search/?$ fleet_scroll_search_db.php [NC,L]
+  	
+  	
+
+  
+#-------------------------------------------------
+
+
+
+
+
+
+
+  
+</IfModule>
